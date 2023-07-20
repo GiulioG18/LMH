@@ -16,17 +16,20 @@
     <Filter Include="Utilities">
       <UniqueIdentifier>{3f647621-3743-4a75-a07b-18c43df56b0a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Lmh">
-      <UniqueIdentifier>{3c0a3c71-7a59-4ada-9aa2-c47d6dbeb9b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Lmh\src">
-      <UniqueIdentifier>{9b5fb640-29ac-4269-989d-b783bf04a9d8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Lmh\header">
-      <UniqueIdentifier>{4f00d6e6-28e8-4ac0-9464-1b3d12aebc2f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Utilities\header">
       <UniqueIdentifier>{4e4945f1-0a66-499c-adf8-aa177dab8fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\src">
+      <UniqueIdentifier>{7781b596-8543-4561-bc6b-7d02dbbcd16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frontend">
+      <UniqueIdentifier>{3c0a3c71-7a59-4ada-9aa2-c47d6dbeb9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frontend\src">
+      <UniqueIdentifier>{9b5fb640-29ac-4269-989d-b783bf04a9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frontend\header">
+      <UniqueIdentifier>{4f00d6e6-28e8-4ac0-9464-1b3d12aebc2f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,19 +42,31 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lmhqt.cpp">
-      <Filter>Lmh\src</Filter>
+      <Filter>Frontend\src</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Lmh\src</Filter>
+      <Filter>Frontend\src</Filter>
+    </ClCompile>
+    <ClCompile Include="observable.cpp">
+      <Filter>Utilities\src</Filter>
+    </ClCompile>
+    <ClCompile Include="errors.cpp">
+      <Filter>Utilities\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="lmhqt.h">
-      <Filter>Lmh\header</Filter>
+      <Filter>Frontend\header</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="singleton.h">
+      <Filter>Utilities\header</Filter>
+    </ClInclude>
+    <ClInclude Include="observable.h">
+      <Filter>Utilities\header</Filter>
+    </ClInclude>
+    <ClInclude Include="errors.h">
       <Filter>Utilities\header</Filter>
     </ClInclude>
   </ItemGroup>
